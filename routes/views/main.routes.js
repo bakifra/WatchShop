@@ -1,3 +1,7 @@
+const router = require("express").Router();
+const MainPage = require("../../components/MainPage");
+
+
 const router = require('express').Router();
 const MainPage = require('../../components/MainPage');
 
