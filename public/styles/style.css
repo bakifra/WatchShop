@@ -17,11 +17,15 @@ body {
 
 .article {
   display: flex;
+  gap: 10px;
 }
 
 .article-text {
   font-size: 30px;
-  font-family: Georgia, "Times New Roman", sans-serif;
+}
+.carousel-item img{
+  height: 280px;
+  width: 450px;
 }
 
 .card {
@@ -30,7 +34,7 @@ body {
    /* временно захардкодил, не забыть поправить */
   height: 350px;
   background: white;
-  padding: .4em;
+  padding: 0.4em;
   border-radius: 6px;
 }
 
@@ -45,7 +49,7 @@ body {
   border-radius: 6px;
 }
 
-.pic{
+.pic {
   width: 100%;
   height: 100%;
 }
@@ -62,7 +66,22 @@ body {
   cursor: pointer;
 }
 
-.slider-watch{
+.slider-watch {
+  display: flex;
+}
+
+.footer {
+  background-color: #7777ea;
+  height: 160px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__flex {
   display: flex;
 }
 
@@ -74,4 +93,98 @@ body {
 
 .table{
   width: 80%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__flex > span {
+  margin: 15px;
+}
+.footer__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__social {
+  margin: 15px;
+}
+.footer__item {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  color: #222224;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  transition: color 1s;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+.footer__item:not(:last-child) {
+  margin: 0 8px 0 0;
+}
+.footer__item:hover {
+  color: #ffffff;
+  background-color: #c6a15a;
+}
+
+.my-slider {
+  padding-top: 70px;
+  margin-top: -55px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  margin-bottom: 30px;
+}
+.my-slider__title {
+  color: #c6a15a;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.my-slider__style {
+  height: 430px;
+  width: 250px;
+}
+
+.img-divchik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Последний варик */
+html,
+body{
+  height: 100%;
+  font-size: 15px;
+}
+.swiper{
+  width: 1000px;
+  height: 100%;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img{
+  width: 58%;
+  object-fit: cover;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 140px !important; 
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 140px !important; 
+  right: auto;
+
 }

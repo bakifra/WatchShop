@@ -2,6 +2,7 @@ const React = require('react');
 
 function NavBar() {
   return (
+
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,6 +41,7 @@ function NavBar() {
         </div>
       </div>
     </nav>
+
   );
 }
 

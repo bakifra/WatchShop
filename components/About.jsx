@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-function About({ title }) {
+function About() {
   return (
-    <Layout title={title}>
+    <>
       <h2> Кто я? </h2>
       <div className="article">
         <p className="article-text">
@@ -23,7 +23,7 @@ function About({ title }) {
         </p>
         <img className="portret" src="/images/Roman.jpg" alt="Ромочка" />
       </div>
-    </Layout>
+      </>
   );
 }
 
