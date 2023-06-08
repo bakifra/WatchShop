@@ -1,6 +1,5 @@
 const React = require('react');
 
-const NavBar = require('./NavBar');
 
 function Layout({ title, children }) {
   return (
@@ -12,6 +11,7 @@ function Layout({ title, children }) {
           href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         />
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" />
+
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -29,7 +29,9 @@ function Layout({ title, children }) {
         <script defer src="/scripts/auth.js" />
       </head>
       <body>
-        <main className="Site-content">{children}</main>
+        {children}
+        {/* <Footer /> */}
+
       </body>
     </html>
   );

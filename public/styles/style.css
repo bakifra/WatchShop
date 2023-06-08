@@ -30,7 +30,9 @@ body {
 
 .card {
   width: 220px;
-  height: 274px;
+  /* height: 274px; */
+   /* временно захардкодил, не забыть поправить */
+  height: 350px;
   background: white;
   padding: 0.4em;
   border-radius: 6px;
@@ -39,7 +41,9 @@ body {
 .card-image {
   background-color: rgb(236, 236, 236);
   width: 80%;
-  height: 60%;
+  /* временно захардкодил, не забыть поправить */
+  /* height: 60%; */
+  max-width: 60%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 6px;
@@ -79,6 +83,17 @@ body {
 }
 .footer__flex {
   display: flex;
+}
+
+
+.formAdd {
+  border: 2px solid red;
+  padding: 30px;
+}
+
+.table{
+  width: 80%;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -171,4 +186,5 @@ body{
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
   left: 140px !important; 
   right: auto;
+
 }

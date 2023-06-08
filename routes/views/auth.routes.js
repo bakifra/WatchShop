@@ -7,7 +7,14 @@ const LogAdmin = require('../../components/LogAdmin');
 // });
 
 router.get('/', (req, res) => {
-  res.redirect('/admin/log');
+  // if (userId) {
+  //   res.redirect('/admin');
+  // } else {
+  //   res.redirect('/admin/log');
+  // }
+  // res.redirect('/admin/log');
+  console.log('hi');
+  res.end();
 });
 
 router.get('/log', (req, res) => {
@@ -15,3 +22,6 @@ router.get('/log', (req, res) => {
 });
 
 module.exports = router;
+
+// {"cookie":{"originalMaxAge":43200000,"expires":"2023-06-09T00:05:03.987Z","httpOnly":true,"path":"/"},"userId":1,"__lastAccess":1686225903988}
+// {"cookie":{"originalMaxAge":43200000,"expires":"2023-06-09T00:06:34.268Z","httpOnly":true,"path":"/"}}
