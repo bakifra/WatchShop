@@ -14,7 +14,7 @@ module.exports = {
       {
         typeId: 1,
         name: 'Не розовый закат 2',
-        image: 'https://polet-watch.ru/files/images/diesel/large/dz7296.jpg',
+        image: 'https://www.bestwatch.ru/images/Philipp%20Plein/big/PWNAA0222.jpg',
         description: 'Ну Оооочень крутые',
         orderId: 1,
       },

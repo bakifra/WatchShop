@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
     res
       .status(200)
       .send(
-        res.renderComponent(About, { title: 'Часы от Романа' }),
+        res.renderComponent(MainPage, { title: 'Часы от Романа' }),
       );
   } catch (error) {
     console.error(error.message, 'МЭЙН РОУТЕС ПРИЛЁГ');
@@ -19,6 +19,6 @@ router.get('/', async (req, res) => {
 //router.get('/', (req, res) => {
   //res.send(res.renderComponent(MainPage, { title: 'Main page' }));
 
-//});
+});
 
 module.exports = router;

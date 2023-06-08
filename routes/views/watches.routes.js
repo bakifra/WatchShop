@@ -1,27 +1,18 @@
 const router = require('express').Router();
+const MainPage = require('../../components/MainPage');
 const WatchPage = require('../../components/WatchPage');
-const Watchs = require('../../components/Watchs');
+// const Watchs = require('../../components/Watchs');
 const { Watch, Type } = require('../../db/models');
 
 router.get('/', async (req, res) => {
   try {
-    // const animals = await Animal.findAll({
-    //   raw: true,
-    //   order: [['id', 'ASC']],
-    //   include: {
-    //     model: User,
-    //     include: {
-    //       model: Like,
-    //     },
-    //   },
-    // });
-    const watchs = await Watch.findAll({
+    const watches = await Watch.findAll({
       order: [['id', 'ASC']],
       include: {
         model: Type,
       },
     });
-    res.send(res.renderComponent(Watchs, { title: 'Animals page', watchs }));
+    res.send(res.renderComponent(MainPage, { title: 'Watch page', watches }));
   } catch ({ message }) {
     res.json(message);
   }

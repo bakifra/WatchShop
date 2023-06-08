@@ -1,19 +1,19 @@
-const React = require('react');
-const Layout = require('./Layout');
+const React = require("react");
+const Layout = require("./Layout");
 
 function LogoForm({ title }) {
   return (
-    <Layout>
-      <form id="log-form">
+    <Layout title={title}>
+      <form id="log-form" action="/api/admin/log" method="POST">
         <div className="mb-3">
-          <label htmlFor="exampleInputEmail1" className="form-label">
-            Email address
+          <label htmlFor="exampename1" className="form-label">
+            login
           </label>
           <input
-            name="email"
-            type="email"
+            name="name"
+            type="text"
             className="form-control"
-            id="exampleInputEmail1"
+            id="exampleInputName1"
             aria-describedby="emailHelp"
           />
         </div>
@@ -28,7 +28,7 @@ function LogoForm({ title }) {
             id="exampleInputPassword1"
           />
         </div>
-        <h1 style={{ color: 'red' }} className="error" />
+        <h1 style={{ color: "red" }} className="error" />
         <button type="submit" className="btn btn-primary">
           Submit
         </button>

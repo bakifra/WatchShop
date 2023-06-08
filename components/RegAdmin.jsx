@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 function RegForm({ title }) {
   return (
     <Layout title={title}>
-      <form id="reg-form">
+     <form id="reg-form" action='/api/admin/reg' method='POST'>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Name
