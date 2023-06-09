@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 function Layout({ title, children }) {
   return (
     <html lang="en">
