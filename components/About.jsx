@@ -1,5 +1,4 @@
 const React = require('react');
-const Layout = require('./Layout');
 
 function About() {
   return (
@@ -21,6 +20,11 @@ function About() {
           сможет найти свой идеальный часовой механизм, сделанный из экологичных и
           качественных материалов, и при этом по разумной цене.
         </p>
+        <div className="photoRoma">
+          <img className="portret" src="/images/Roman.jpg" alt="Ромочка" />
+        </div>
+      </div>
+    </>
         <img className="portret" src="/images/Roman.jpg" alt="Ромочка" />
       </div>
       <a> </a>
