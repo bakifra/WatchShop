@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const formUpdateWatch = require('../../components/adminComponents/FormUpdateCard');
 
 const WatchItem = require('../../components/WatchItem');
-const { Watch } = require('../../db/models');
+const { Watch, User} = require('../../db/models');
 
 router.post('/log', async (req, res) => {
   try {
