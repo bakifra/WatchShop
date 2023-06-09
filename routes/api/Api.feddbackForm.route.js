@@ -1,7 +1,4 @@
 const getform = require('express').Router();
-// const newOrder = require('../../components/FeedbackForm');s
-// const db = require('../../db/models');
-// const { json } = require('sequelize');
 const mailer = require('../../nodemailer');
 const { Order, Customer } = require('../../db/models');
 
@@ -15,19 +12,14 @@ getform.post('/newOrder', async (req, res) => {
     await Order.create({
       orderDescription, img1, img2, customerId: customId,
     });
-
     const messageAnswer = {
-      from: 'WatchShop <2814598@inbox.ru>',
+      from: 'Тикики-Такики <2814598@inbox.ru>',
       to: req.body.email,
-      subject: 'Ваш заказ принят!',
-      text: 'Поздравляем! Вы успешно оставили заказ на уникальные часы ручной работы! В ближайшее время с Вами свяжется наш менеджер, для уточнения деталей. Данное письмо не требует ответа.',
+      subject: 'Ваш заказ на изготовление часов принят!',
+      text: `Поздравляем!\nВы успешно оставили заказ на уникальные часы ручной работы! В ближайшее время с Вами свяжется наш менеджер по оставленному вами телефону ${phone}, для уточнения деталей.\nВаш заказ:\nОписание:${orderDescription}\nЭскизы доступны по ссылкам: ${img1}\n${img2}\n\nДанное письмо не требует ответа. Если вы хотите изменить детали заказа позвоните по номеру 8-800-555-35-35 каждый последний четверг нечётного месяца кроме Ноября\nСпасибо!\n\nВаш Ромочка.`,
     };
     mailer(messageAnswer);
     res.json({ message: 'ok' });
-    
-    // res.json({ message: 'ok' });
-    // res.redirect('/');
-    // res.json({ message: 'Успешно отправлено' });
   } catch (e) {
     res.status(500).json({ message: e.message });
   }

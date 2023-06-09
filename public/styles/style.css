@@ -299,4 +299,25 @@ body{
   transition-duration: 0.1s;
 }
 
+.navigator-Bar{
+  display: flex;
+  wrap: nowrap;
+}
 
+.card button {
+  border: 1px solid rgba(106, 123, 246, 0.5);
+  background-color: rgb(132, 75, 132);
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+}
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
