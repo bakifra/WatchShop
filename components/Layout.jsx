@@ -19,7 +19,6 @@ function Layout({ title, children }) {
         />
 
         <link rel="stylesheet" href="/styles/style.css" />
-        <script defer src="/scripts/script.js" />
         <script defer src="/scripts/auth.js" />
       </head>
       <body>

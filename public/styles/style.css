@@ -61,3 +61,82 @@ body {
 .slider-watch{
   display: flex;
 }
+
+.order {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 70px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+.orgerForma {
+  height: 650px;
+  width: 475px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #222224;
+  /* background-image: url("./img/bgform.png"); */
+  background-size: cover;
+}
+
+.orderTitle {
+  color: #71838a;
+  padding-bottom: 48px;
+  padding-top: 20px;
+}
+
+.form-control {
+  border-radius: 20px;
+  margin: 36px 0;
+  padding: 15px;
+}
+
+.form-url {
+  border-radius: 20px;
+  margin: 10 0;
+  padding: 10px;  
+}
+
+.btn {
+  /* appearance: none; */
+  background-color: #FAFBFC;
+  /* border: 1px solid rgba(27, 31, 35, 0.15); */
+  border-radius: 20px;
+  /* box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset; */
+  /* padding: 14px 49px;
+  margin: 10px 20px; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* display: inline-block; */
+  /* letter-spacing: 20px; */
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  /* display: inline-block; */
+  /* font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+  font-size: 14px;
+  font-weight: 650;
+  list-style: none;
+  padding: 6px 16px;
+  /* position: relative; */
+  /* transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1); */
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+  /* vertical-align: middle; */
+  /* white-space: nowrap; */
+  /* word-wrap: break-word; */
+}
+
+.btn:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+
