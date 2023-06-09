@@ -11,7 +11,9 @@ const SliderMain = require('./SliderMain');
 function MainPage({ title, watches }) {
   return (
     <Layout title={title}>
-      <NavBar />
+      <header className="header">
+        <NavBar />
+      </header>
       <SliderMain />
       {/* <p>Последняя изготовленная модель</p> */}
       {/* <Slider watches={watches} /> */}

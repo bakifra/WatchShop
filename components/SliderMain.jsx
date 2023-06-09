@@ -3,23 +3,14 @@ const React = require('react');
 function SliderMain({ watches }) {
   return (
     <>
-      <div className="swiper mySwiper">
-        <div className="swiper-wrapper">
-          <div className="swiper-slide"><img src="https://miro.medium.com/max/1400/1*BR2RiTRoYor9xSrzEgxLWQ.jpeg" /></div>
-          <div className="swiper-slide"><img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg" /></div>
-          <div className="swiper-slide"><img src="https://img.freepik.com/free-vector/neon-lights-background-theme_52683-44625.jpg?w=2000" /></div>
-          <div className="swiper-slide">
-            <img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg
-        "
-            />
-
-          </div>
-          <div className="swiper-slide"><img src="https://img.freepik.com/premium-vector/minimalist-shape-background_112769-210.jpg" /></div>
-        </div>
-        <div className="swiper-pagination" />
+      <div className="slide">
+        <div className="swiper-button-next" />
+        <div className="swiper-slide"><img src="/images/photo-1.avif" /></div>
+        <div className="swiper-slide"><img src="/images/photo-2.avif" /></div>
+        <div className="swiper-slide"><img src="/images/photo-3.avif" /></div>
+        <div className="swiper-slide"><img src="/images/photo-4.avif" /></div>
+        <div className="swiper-button-prev" />
       </div>
-      <div className="swiper-button-next" />
-      <div className="swiper-button-prev" />
 
       {/* <script>
     var swiper = new Swiper(".mySwiper", {
