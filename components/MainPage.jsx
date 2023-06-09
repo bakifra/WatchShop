@@ -8,14 +8,15 @@ const Footer = require('./Footer');
 // const Slider = require("./Slider");
 const SliderMain = require('./SliderMain');
 
-function MainPage({ title, watches }) {
+function MainPage({ title, watches, user }) {
+  console.log(user);
   return (
     <Layout title={title}>
-      <NavBar />
+      <NavBar user={user} />
       <SliderMain />
       {/* <p>Последняя изготовленная модель</p> */}
       {/* <Slider watches={watches} /> */}
-      <WatchPage watches={watches} />
+      <WatchPage watches={watches} user={user} />
       <About />
       <FeedbackForm />
       <Footer />
