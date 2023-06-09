@@ -1,5 +1,5 @@
-const React = require("react");
-const WatchItem = require("./WatchItem");
+const React = require('react');
+const WatchItem = require('./WatchItem');
 
 function WatchPage({ watches = [] }) {
   return (

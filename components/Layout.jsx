@@ -28,6 +28,7 @@ function Layout({ title, children }) {
         <script defer src="/scripts/auth.js" />
         <script defer src="/scripts/submitForm.js" />
 
+        <script defer src="/scripts/adminScript.js" />
       </head>
       <body>
         {children}

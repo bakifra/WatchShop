@@ -1,10 +1,10 @@
 const React = require('react');
 const WatchItem = require('../WatchItem');
 
-function AdminCardsPage({watches = []}) {
+function AdminCardsPage({ watches = [] }) {
   return (
-    <>
-      <div className="slider-watch">
+    <div className="cards-list">
+      <div className="slider-watch type1 ">
         <p>Наручные часы</p>
         {watches
           .filter((watch) => watch.typeId === 1)
@@ -12,7 +12,7 @@ function AdminCardsPage({watches = []}) {
             <WatchItem key={watch.id} watch={watch} />
           ))}
       </div>
-      <div className="slider-watch">
+      <div className="slider-watch type2">
         <p>Песочные часы</p>
         {watches
           .filter((watch) => watch.typeId === 2)
@@ -20,7 +20,7 @@ function AdminCardsPage({watches = []}) {
             <WatchItem key={watch.id} watch={watch} />
           ))}
       </div>
-      <div className="slider-watch">
+      <div className="slider-watch type3">
         <p>Настенные часы</p>
         {watches
           .filter((watch) => watch.typeId === 3)
@@ -28,7 +28,7 @@ function AdminCardsPage({watches = []}) {
             <WatchItem key={watch.id} watch={watch} />
           ))}
       </div>
-    </>
+    </div>
   );
 }
 
