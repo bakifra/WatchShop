@@ -1,0 +1,323 @@
+body {
+  /* background: radial-gradient(
+    circle at 45% 50%,
+    rgba(161, 103, 255, 0.52),
+    rgba(106, 123, 246, 0.6)
+  ); */
+
+  font-family: "FreeMono", monospace;
+  /* cursor: default; */
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #222224;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+.slide {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.photoRoma {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 6em */
+}
+
+.portret {
+  width: 600px;
+  height: 400px;
+}
+
+.article {
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.article-text {
+  font-size: 30px;
+}
+.carousel-item img{
+  height: 280px;
+  width: 450px;
+}
+
+.card {
+  width: 220px;
+  /* height: 274px; */
+   /* временно захардкодил, не забыть поправить */
+  height: 350px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 80%;
+  /* временно захардкодил, не забыть поправить */
+  /* height: 60%; */
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.name-watch {
+  font-weight: 600;
+}
+
+.name-watch:hover {
+  cursor: pointer;
+}
+
+.slider-watch {
+  display: flex;
+}
+
+.footer {
+  /* min-width: 1200px; */
+  background-color: #222224;
+  height: 160px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__flex {
+  display: flex;
+}
+
+
+.formAdd {
+  border: 2px solid red;
+  padding: 30px;
+}
+
+.table{
+  width: 80%;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__flex > span {
+ text-align: center;
+  margin: 15px;
+}
+.footer__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__social {
+  margin: 15px;
+}
+.footer__item {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  color: #222224;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  transition: color 1s;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+.footer__item:not(:last-child) {
+  margin: 0 8px 0 0;
+}
+.footer__item:hover {
+  color: #ffffff;
+  background-color: #c6a15a;
+}
+
+.my-slider {
+  padding-top: 70px;
+  margin-top: -55px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  margin-bottom: 30px;
+}
+.my-slider__title {
+  color: #c6a15a;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.my-slider__style {
+  height: 430px;
+  width: 250px;
+}
+
+.img-divchik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* Последний варик */
+html,
+body{
+  height: 100%;
+  font-size: 15px;
+}
+.swiper{
+  width: 1000px;
+  height: 100%;
+  padding: 30px;
+}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img{
+  width: 58%;
+  object-fit: cover;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 140px !important; 
+  left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 140px !important; 
+  right: auto;
+
+}
+
+/* заявка на заказ часов */
+.order {
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 70px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+.orgerForma {
+  height: 650px;
+  width: 475px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #222224;
+  /* background-image: url("./img/bgform.png"); */
+  background-size: cover;
+}
+
+.orderTitle {
+  color: #71838a;
+  padding-bottom: 48px;
+  padding-top: 20px;
+}
+
+.form-control {
+  border-radius: 20px;
+  margin: 36px 0;
+  padding: 15px;
+}
+
+.form-url {
+  border-radius: 20px;
+  margin: 10 0;
+  padding: 10px;  
+}
+
+.btn {
+  /* appearance: none; */
+  background-color: #FAFBFC;
+  /* border: 1px solid rgba(27, 31, 35, 0.15); */
+  border-radius: 20px;
+  /* box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset; */
+  /* padding: 14px 49px;
+  margin: 10px 20px; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* display: inline-block; */
+  /* letter-spacing: 20px; */
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  /* display: inline-block; */
+  /* font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; */
+  font-size: 14px;
+  font-weight: 650;
+  list-style: none;
+  padding: 6px 16px;
+  /* position: relative; */
+  /* transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1); */
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+  /* vertical-align: middle; */
+  /* white-space: nowrap; */
+  /* word-wrap: break-word; */
+}
+
+.btn:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.navigator-Bar{
+  display: flex;
+  wrap: nowrap;
+}
+
+.card button {
+  border: 1px solid rgba(106, 123, 246, 0.5);
+  background-color: rgb(132, 75, 132);
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+}
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}

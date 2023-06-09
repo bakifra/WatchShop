@@ -5,29 +5,34 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     const customersData = [
       {
-        name: "Толя",
+        name: "TOLYA",
         email: "tolyane@mail.ru",
         phone: "+78889990000",
       },
       {
-        name: "Аня",
+        name: "ANNA",
         email: "anya_ne@mail.ru",
         phone: "78889990001",
       },
       {
-        name: "Артём",
+        name: "ARTEM",
         email: "artem_ne@mail.ru",
         phone: "78889990002",
       },
       {
-        name: "Юра",
+        name: "JURII",
         email: "Juriy_ne@mail.ru",
         phone: "78889990003",
       },
       {
-        name: "Лиза",
+        name: "LIZA",
         email: "liza_ne@mail.ru",
         phone: "78889990004",
+      },
+      {
+        name: "MARINA",
+        email: "marina_ne@mail.ru",
+        phone: "78889990005",
       },
     ];
     const customers = customersData.map((person) => ({
