@@ -3,7 +3,7 @@ const AdminMain = require('../../components/adminComponents/AdminMain');
 const { Watch, Type } = require('../../db/models');
 
 router.get('/', async (req, res) => {
-  console.log('hi');
+  // console.log('hi');
   try {
     const watches = await Watch.findAll({
       order: [['id', 'ASC']],
