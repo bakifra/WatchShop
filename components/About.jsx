@@ -23,6 +23,7 @@ function About() {
         </p>
         <img className="portret" src="/images/Roman.jpg" alt="Ромочка" />
       </div>
+      <a> </a>
       </>
   );
 }
