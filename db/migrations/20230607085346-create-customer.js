@@ -15,7 +15,6 @@ module.exports = {
       },
       email: {
         allowNull: false,
-        unique: true,
         type: Sequelize.TEXT
       },
       phone: {

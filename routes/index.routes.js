@@ -11,6 +11,8 @@ const ApiRoute = require('./api/api.routes');
 
 // const AdminCardsPageRoute = require('./views/admin.cards.routes');
 
+const ApiFeddbackFormRoute = require('./api/Api.feddbackForm.route');
+
 router.use('/', mainRoute);
 router.use('/admin', authRoute);
 router.use('/admin-main', AdminMainRoute);
@@ -19,5 +21,6 @@ router.use('/api/customers', ApiRoute);
 
 router.use('/watches', watchesRoute);
 // router.use('/admin-main', AdminCardsPageRoute);
+router.use('/api/form', ApiFeddbackFormRoute);
 
 module.exports = router;

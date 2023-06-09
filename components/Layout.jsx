@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 function Layout({ title, children }) {
   return (
     <html lang="en">
@@ -27,6 +26,8 @@ function Layout({ title, children }) {
         />
         <script defer src="/scripts/script.js" />
         <script defer src="/scripts/auth.js" />
+        <script defer src="/scripts/submitForm.js" />
+
       </head>
       <body>
         {children}

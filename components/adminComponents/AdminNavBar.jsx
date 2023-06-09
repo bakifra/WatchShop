@@ -4,7 +4,7 @@ const React = require('react');
 function AdminNavBar() {
   return (
     <nav className="navigator-Bar">
-      <div className="wrapper">
+      <div style={{display: 'flex', width: '400px', justifyContent: 'space-between'}} className="wrapper">
         <div className="group1">
           <button type="button" className="btn btn-main">
             Main
@@ -14,7 +14,7 @@ function AdminNavBar() {
           <button type="button" className="btn btn-add-watch">
             AddWatch
           </button>
-          <button type="button" className="btn btn-orders">
+          <button style={{marginLeft: '25px'}} type="button" className="btn btn-orders">
             Orders
           </button>
         </div>
