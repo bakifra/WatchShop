@@ -13,6 +13,9 @@ function AdminMain({ title, watches }) {
       <AdminOrdersTable />
       <h1>AdminCardsList</h1>
       <AdminCardsList watches={watches} />
+      <a href="/api/customers" download>
+        <img src="https://cdn-icons-png.flaticon.com/512/843/843281.png" alt="DB stole" width="100" />
+      </a>
     </Layout>
   );
 }
