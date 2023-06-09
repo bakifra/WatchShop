@@ -22,12 +22,8 @@ function FeedbackForm() {
           <button type="submit" className="btn" role="button">
             Send
 
-          </button>
-        </form>
-        <script defer src="/scripts/submitForm.js" />
-      </div>
-    </div>
-  );
+  
+  )
 }
 
 module.exports = FeedbackForm;
